@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ugprv_library"/>
+	<classpathentry kind="lib" path="/ugprv_library/classes"/>
+	<classpathentry kind="lib" path="C:/Users/Daniel/Workspace/thirdparty/c3p0-0.9.5-pre5/lib/c3p0-0.9.5-pre5.jar" sourcepath="C:/Users/Daniel/Workspace/thirdparty/c3p0-0.9.5-pre5/src/c3p0-0.9.5-pre5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Daniel/Workspace/thirdparty/c3p0-0.9.5-pre5/lib/mchange-commons-java-0.2.6.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
