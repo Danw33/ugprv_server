@@ -32,6 +32,7 @@ public final class Configuration extends ConfigurationEngine {
 	{
 		SERVER		("server"),
 		DATABASE	("database"),
+		NETWORK		("network"),
 		LOG			("log"),
 		;
 		
@@ -49,8 +50,14 @@ public final class Configuration extends ConfigurationEngine {
 		
 		DATABASE_USERNAME		(Section.DATABASE, "db-username"),	//Database Username
 		DATABASE_PASSWORD		(Section.DATABASE, "db-password"),	//Database Password
-		DATABASE_DRIVER			(Section.DATABASE, "db-driver"),		//Database Driver
-		DATABASE_JDBCURI		(Section.DATABASE, "db-jdbcuri"),		//Database JDBC Connection URI
+		DATABASE_DRIVER			(Section.DATABASE, "db-driver"),	//Database Driver
+		DATABASE_JDBCURI		(Section.DATABASE, "db-jdbcuri"),	//Database JDBC Connection URI
+		
+		SOCKET_DATAGRAM			(Section.NETWORK, "socket-datagram"),	//Datagram (UDP) Listener Port 			(Default: 7000);
+		SOCKET_WEBAPI			(Section.NETWORK, "socket-webapi"),		//Web API Listener Port 				(Default: 80); 
+		SOCKET_SERVER			(Section.NETWORK, "socket-server"),		//TCP Connection Handling Listener Port (Default: 9000)
+		
+		TRANSPONDER_ENABLED		(Section.NETWORK, "xpndr-enabled"),		//Transponder (E-Squawk Support) Enabled
 		
 		PRETTY_LOGGING			(Section.LOG, "log-pretty"),		//Pretty Logging Support (True/False)
 		;

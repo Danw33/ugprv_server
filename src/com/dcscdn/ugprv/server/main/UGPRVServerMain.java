@@ -74,12 +74,15 @@ public class UGPRVServerMain {
 		//TODO
 		Trace.Debug( "  > Starting Socket Engine" );
 		
+		Int DatagramPort = Configuration.Parameter.getValueAsString( Parameter.DATAGRAM_SOCKET );
+		Trace.Debug( "  > Attaching Datagram Listener to socket (UDP Port Number " +  + ")" );
+		
 		//Prepare the Routing Engine for Use
 		//TODO
 		Trace.Debug( "  > Starting Routing Engine" );
 		
 		//And At last, the server is considered "started"
-		int ServerMode = Configuration.Parameter.getValueAsInt( Parameter.SERVER_MODE );
+		//int ServerMode = Configuration.Parameter.getValueAsInt( Parameter.SERVER_MODE );
 		Trace.Info( "UGPRV Server Started!" ); //TODO: Add a "Started in X Seconds" bit
 				
 		//Perform Role-Specific Loading Sequence (post-startup)

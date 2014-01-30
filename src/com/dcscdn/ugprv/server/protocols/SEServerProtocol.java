@@ -6,11 +6,17 @@ package com.dcscdn.ugprv.server.protocols;
 import com.dcscdn.ugprv.lib.engine.SocketEngine.SEProtocol;
 
 /**
- * Mode 1 Protocol (Server) for use with the UGPRV Socket Engine.
+ * Mode 1 Protocol (Server) for use with the UGPRV Socket Engine. 
+ * Implements the SocketEngine Protocol from the UGPRV Library.
+ * @see SEProtocol
  * @author Daniel Wilson
  */
-public class SEServerProtocol extends SEProtocol {
+public class SEServerProtocol implements SEProtocol {
 
+	/**
+	 * Protocol Constructor
+	 * @author Daniel Wilson
+	 */
 	public SEServerProtocol()
 	{
 		super();
