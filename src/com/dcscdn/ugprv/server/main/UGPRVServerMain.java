@@ -74,8 +74,8 @@ public class UGPRVServerMain {
 		//TODO
 		Trace.Debug( "  > Starting Socket Engine" );
 		
-		Int DatagramPort = Configuration.Parameter.getValueAsString( Parameter.DATAGRAM_SOCKET );
-		Trace.Debug( "  > Attaching Datagram Listener to socket (UDP Port Number " +  + ")" );
+		int datagramPort = Configuration.Parameter.getValueAsInt( Parameter.SOCKET_DATAGRAM );
+		Trace.Debug( "  > Attaching Datagram Listener to socket (UDP Port Number " + datagramPort  + ")" );
 		
 		//Prepare the Routing Engine for Use
 		//TODO
