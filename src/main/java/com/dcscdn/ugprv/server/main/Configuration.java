@@ -3,8 +3,6 @@
  */
 package com.dcscdn.ugprv.server.main;
 
-import java.util.HashMap;
-
 import com.dcscdn.ugprv.lib.engine.ConfigurationEngine;
 import com.dcscdn.ugprv.lib.system.Trace;
 
