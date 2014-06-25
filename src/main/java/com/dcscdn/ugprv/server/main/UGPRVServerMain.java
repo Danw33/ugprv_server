@@ -51,6 +51,10 @@ public class UGPRVServerMain {
 		Trace.Debug( "  > Loading Configuration" );
 		Configuration.LoadConfiguration( ConfigurationFilePath );
 		
+		//Attach the GPS
+		Trace.Debug( "  > Attaching GPS Listener");
+		
+		
 		//Start the Database Engine and Prepare the Connection Pool
 		Trace.Debug( "  > Starting Database Engine" );
 		Database.Engine = new DatabaseEngine(DriverClass.MYSQL, 
